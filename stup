@@ -1,0 +1,8 @@
+dwm &
+feh --bg-scale ~/Downloads/wall.jpg &
+compton &
+xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate right --output HDMI1 --mode 1920x1080 --pos 0x392 --rotate normal --output VIRTUAL1 --off --output DP1 --off
+while(true)do :
+    xsetroot -name "$(echo " [" `date +"%T %-d-%m-%y"` "|" `ip a | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'` "|" `df -h "/" | grep G | awk '{print $5}'`" Disk Used ]"  || exit 1)"
+    sleep 30s
+done
