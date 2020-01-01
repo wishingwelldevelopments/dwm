@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=DWM
+Comment=dynamic window manager
+Exec=/usr/local/bin/stup
+Type=Application
+DesktopNames=DWM
